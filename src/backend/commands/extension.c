@@ -869,7 +869,7 @@ set_serach_path_for_extension(List *requiredSchemas, const char *schemaName)
 
 	(void) set_config_option("search_path", pathbuf.data,
 							 PGC_USERSET, PGC_S_SESSION,
-							 GUC_ACTION_SAVE, true, 0);
+							 GUC_ACTION_SAVE, true, 0, false);
 }
 
 /*
